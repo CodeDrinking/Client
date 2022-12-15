@@ -6,7 +6,7 @@ const TodosContextProvider = ({children}) =>{
     const [todos, setTodos] = useState([])
     const[user , SetUser] = useState({})
     const getTodosData=()=>{
-        axios.get('http://18.179.25.47:8000/api/todos').then((res) => {
+        axios.get('http://54.64.239.9:8000/api/todos').then((res) => {
             setTodos(res.data);
           });  
     }

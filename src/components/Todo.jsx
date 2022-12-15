@@ -14,7 +14,7 @@ function Todo() {
   console.log("*************")
 
   useEffect(() => {
-    axios.get(`http://18.179.25.47:8000/api/todos/${id}`).then((res) => {
+    axios.get(`http://54.64.239.9:8000/api/todos/${id}`).then((res) => {
       const responseTodo = res.data;
       SetTodoDetails(responseTodo);  
     })

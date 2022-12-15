@@ -20,7 +20,7 @@ function SignUpUser() {
 
     function Onsubmit(e){
         e.preventDefault();
-        axios.post("http://localhost:8000/api/todos/register", {
+        axios.post("http://54.64.239.9:8000/api/register", {
           name : SignUpData.name,
           email : SignUpData.email,
           password : SignUpData.password

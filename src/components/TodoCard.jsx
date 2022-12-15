@@ -15,7 +15,7 @@ const TodoCard = (props) =>{
     const deleteTodo = ( e, _id ) =>{
         e.preventDefault();
         // 192.168.1.54:8000 IP
-        axios.delete(`http://18.179.25.47:8000/api/todos/${_id}`)
+        axios.delete(`http://54.64.239.9:8000/api/todos/${_id}`)
         .then((res)  => {
           console.log("deleted" , res )
           getTodosData()

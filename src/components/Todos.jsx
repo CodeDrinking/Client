@@ -29,7 +29,7 @@ function Todos() {
 
   function Onsubmit(e){
     e.preventDefault();
-    axios.post("http://18.179.25.47:8000/api/todos", {
+    axios.post("http://54.64.239.9:8000/api/todos", {
       userId : TodoForm.userId,
       title : TodoForm.title,
       completed : TodoForm.isCompleted

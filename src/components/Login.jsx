@@ -24,7 +24,7 @@ function Login() {
 
   function Onsubmit(e){
     e.preventDefault();
-    axios.post("http://localhost:8000/api/login", {
+    axios.post("http://54.64.239.9:8000/api/login", {
       email : LoginState.email,
       password : LoginState.password
     }).then(res => {
